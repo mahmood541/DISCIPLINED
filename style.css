@@ -1,0 +1,1061 @@
+/* bootstrap */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*body's*/
+/*ينطبق على كل الصفحات (body)*/
+body.learningHubBody {
+
+    background-color: aliceblue;
+
+    margin: 0;
+}
+
+/*---------tabel learning hub------------*/
+/* التيبل تبع اليرننج هوب أخر واحد*/
+table#sources_tabel_learning_hub {
+    text-align: center;
+    background-color: white;
+    width: 70%;
+    border-collapse: collapse;
+}
+
+/*التيبل أخر واحد في اليرننج هوب*/
+table#sources_tabel_learning_hub td {
+
+    border: 5px double navy;
+    padding: 0px;
+    margin: 0px;
+
+    padding-right: 0px;
+
+}
+
+/*الصور الي جوا أخر تيبل*/
+table#sources_tabel_learning_hub img {
+
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    padding-right: 0px;
+
+}
+
+/*ما فيه تيبل روو*/
+table#sources_tabel_learning_hub tr {
+
+    padding-right: 0px;
+
+}
+
+/*الجدول الاخير ب اليرننج هوب*/
+div.tabel_homepage_sources {
+
+    text-align: center;
+    margin-left: 280px;
+    margin-bottom: 30px;
+}
+
+/*---------ul/li------------*/
+/*ما فييه وضيفه*/
+ul.none {
+
+    list-style: none;
+
+}
+
+/*لا يوجد*/
+img.aboutus_img {
+
+
+    height: 400px;
+
+}
+
+/*Footer---------------------*/
+footer {
+    padding: 30px;
+    background-color: #3E5F4B;
+    text-align: center;
+    color: #F5F5F5;
+}
+
+/*nav bar--------------------*/
+nav {
+
+    background-color: #3E5F4B;
+    color: #F5F5F5;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 1px solid black;
+    border-width: 0px 0px 2px 0px;
+}
+
+nav a {
+
+    color: aliceblue;
+
+    text-decoration: none;
+    margin-left: 0PX;
+    font-size: 16px;
+}
+
+/*الي قبل الهوم بييج ب البار*/
+.logo {
+
+    font-weight: bold;
+    
+
+}
+
+nav a:hover {
+
+    text-decoration: underline;
+
+}
+
+/*بعد الازرار الي فوق عن بعض ضمن (nav)*/
+nav table.website_header_tabel td {
+
+    padding-left: 20px;
+
+}
+
+/*----------------content divs (boxes)-------*/
+/*stairs homepage*/
+
+/* البوكسات الثلاث تبعون ال home bge أخر اشي */
+table.organaize_boxes {
+    text-align: center;
+    border-collapse: collapse;
+}
+
+/* البوكس الايمن الاخير في صفحة ال homepage  */
+ol.Benifits {
+    font-size: 14px;
+    border: 2px solid gold;
+    background-color: rgba(255, 255, 255, 0.682);
+    padding: 30px;
+    height: 50%;
+    color: rgb(2, 74, 2);
+}
+
+/*مستخدم على الصور داخل كل قصة نجاح*/
+div.box_Succses div img {
+
+    padding: 20px;
+}
+
+/*كل قصة داخل بوكس ب ال succes story*/
+div.box_Succses {
+
+
+    background-color: #DFF5E0;
+    width: 90%;
+    margin: 30px auto;
+    border: 5px groove #3E5F4B;
+    padding: 10px;
+
+}
+
+div.box_Succses_2 {
+
+
+    background-color: #f5f5f53a;
+    width: 90%;
+    margin: 30px auto;
+    border: 1.28px solid #3E5F4B;
+    padding: 10px;
+
+}
+
+/*البوكس الي على اليسار أخر صفحة الهووم بييج*/
+div.box_homepage_left {
+
+    text-align: center;
+    margin: 10px;
+    width: 350px;
+
+    background-color: #DFF5E0;
+
+    border: 1.28px solid #3E5F4B;
+    padding: 10px;
+    border-radius: 7px;
+
+
+
+}
+
+/*البوكس الي على اليسار أخر صفحة الهووم بييج الصورة*/
+div.box_homepage_left img {
+
+    height: 200px;
+    padding-top: 40px;
+
+}
+
+/*البوكس الي ب النص أخر صفحة الهووم بييج*/
+div.box_homepage_center {
+
+    text-align: center;
+    margin: 10px;
+    background-color: #C4E8C6;
+    width: 350px;
+    margin-top: 50px;
+    border-radius: 7px;
+
+    border: 1.28px solid #3E5F4B;
+    padding: 10px;
+
+
+}
+
+/*الصورة الي ب النص أخر صفحة الهووم بييج*/
+div.box_homepage_center img {
+
+    width: 300px;
+
+    padding-top: 40px;
+
+}
+
+/*البوكس الايمن أخر صفحة الهووم بييج*/
+div.box_homepage_right {
+
+    text-align: center;
+    background-color: #A9DBAC;
+    margin: 10px;
+    width: 350px;
+
+    margin-top: 129px;
+    border-radius: 7px;
+    /*------------------------*/
+    border: 1.28px solid #3E5F4B;
+    padding: 10px;
+}
+
+/*الصورة الكبيرة اول الهووم بييج*/
+div.Homepage_img {
+
+
+    text-align: center;
+}
+
+/*البوكس الاول في صفحة about us*/
+div.box {
+
+
+    background-color: #DFF5E0;
+    width: 90%;
+    margin: 30px auto;
+    border: 1.28px solid #3E5F4B;
+    padding: 10px;
+}
+
+/*ما اله */
+div.box_homepage {
+
+    text-align: center;
+    margin: 20px;
+    background-color: #DFF5E0;
+    width: 90%;
+    margin-top: 300px;
+
+    border: 1.28px solid #3E5F4B;
+    padding: 10px;
+}
+
+/*ما اله*/
+div.box_homepage div.Text {
+    margin-left: 170px;
+    width: 70%;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*About us box*/
+/*اسفل صفحة about us جملة (who we are)*/
+div.GrayBox_aboutUs {
+
+    background-color: rgb(229, 233, 237);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+
+}
+
+/*الثلث صناديق كاملة اسفل صفحة about us*/
+div.GrayBox_aboutUs table {
+    text-align: center;
+    margin-left: 30px;
+}
+
+/*الي هيه جملة who we are*/
+div.GrayBox_aboutUs h2 {
+    text-align: center;
+    margin: 30px 0px 0px 0px;
+}
+
+/*Names boxes*/
+/*كل بوكس من البوكسات الثلاث الي تحت الabout us page*/
+div.NameBox {
+
+    width: 60%;
+    border: 0.5px solid #3E5F4B;
+
+    padding: 25px;
+    background-color: #DFF5E0;
+    margin-left: 60px;
+    margin: 50px;
+    height: 150px;
+
+
+}
+
+/*الكلام الي تحت الاسم داخل كل بوكس ب صفحة ال about us*/
+div.NameBox p {
+    font-size: 13px;
+}
+
+/*h1's and outside the box*/
+/*العنوان اعلا الشاشه*/
+h1#introHeader {
+    margin-top: 0;
+    text-align: center;
+    background-color: rgb(237, 237, 237);
+    border: 1.30px solid palegoldenrod;
+}
+
+/*كلمة sources ب أخر جدول ب صفحة الlearning hup */
+h1#source {
+
+    text-align: center;
+    /*fiqure*/
+}
+
+/*الفيديو الموجود ب ال learning hub*/
+figure.leariningHubIntro video {
+
+
+    width: 80%;
+    height: auto;
+
+}
+
+/*الفيديو الموجود ب ال learning hub*/
+figure.leariningHubIntro {
+
+    text-align: center;
+
+}
+
+/* contact us */
+/*البوكس الاخير ب صفحةال  contact us الكلام الي فوو كل بوكس*/
+div.box_contact_us {
+
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #c0ddc2;
+    width: 70%;
+    margin: 30px auto;
+    border: 1.28px solid #3E5F4B;
+    padding: 10px;
+}
+
+/*كلمة contact us الهيدر الموجود ب أخر بوكس*/
+div.box_contact_us h1 {
+
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #9DC4B5;
+    width: 90%;
+    margin: 30px auto;
+    border: 1.28px solid #3E5F4B;
+    padding: 10px;
+    text-align: center;
+}
+
+/*الي هوه اول بوكس ال full name أخر اشي ب ال contact us*/
+div.box_contact_us input.contact_us_Questions {
+    height: 30px;
+    width: 100%;
+}
+
+/*ازرار ال send and reset أخر صفحةال contact us*/
+div.box_contact_us input.send_contact_us {
+    font-size: 20px;
+    background-color: #3E5F4B;
+    color: #F6F7EB;
+    border: 3px double #F6F7EB;
+}
+
+/*الهيدر تبع اول صفحة ال contact us */
+h1.contact_us_for_boxes {
+
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #9DC4B5;
+    width: 90%;
+    margin: 30px auto;
+    border: 1.28px solid #3E5F4B;
+    padding: 10px;
+    text-align: center;
+
+}
+
+/*succses story*/
+/*البوكس تبع كل قصة*/
+/*السكسس ستوري ال p*/
+.TextCSS {
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+/* succes story image 1*/
+img.Success_img1 {
+
+    height: 180px;
+    width: auto;
+
+}
+
+/* succes story image 2*/
+
+img.Success_img2 {
+
+
+    height: 190px;
+    width: auto;
+}
+
+/* succes story image 3*/
+img.Success_img3 {
+
+
+    height: 190px;
+    width: auto;
+}
+
+/*كل بوكس من البوكسات الثلاث جوا div*/
+.box_Succses {
+    width: 90%;
+    background-color: #E8F5E9;
+    border: 1.3px solid #2c4b35;
+    padding: 15px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    margin-right: 35px;
+    margin-left: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* الجداول بوخد عرض كامل البوكس */
+.box_Succses table {
+    width: 100%;
+}
+
+/*عناويين القصص بداية كل قصه */
+.box_Succses h2 {
+    background-color: #C8E6C9;
+    border-left: 4px solid #3E5F4B;
+    border-radius: 4px;
+    padding: 8px 10px;
+    font-size: 18pt;
+    color: #2c4b35;
+    margin-bottom: 12px;
+}
+
+/* الجملة التحفيزية تحت كل قصة */
+.box_Succses h4 {
+    color: #3E5F4B;
+    font-size: 15pt;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/*الفقرات*/
+.TextCSS {
+    font-size: 14pt;
+}
+
+/* كل اشي بولد*/
+.TextCSS b {
+    color: #2c4b35;
+}
+
+/*every under line words*/
+.TextCSS u {
+    color: red;
+}
+
+/*under every strong tag*/
+.TextCSS strong {
+    color: green;
+}
+
+
+
+.box_Succses {
+
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+/*الصور الثلاث*/
+.Success_img1,
+.Success_img2,
+.Success_img3 {
+
+    margin-bottom: 10px;
+    border-radius: 6px;
+}
+
+/* الفيديوهات الثلاث */
+.success-vid1,
+.success-vid2,
+.success-vid3 {
+    width: 750px;
+    height: auto;
+    border-radius: 6px;
+}
+
+/* تأثير hover على الفيديو والصور */
+
+
+
+
+
+/* تأثير hover على p */
+.box_Succses p:hover {
+    background-color: #8dc6a48c;
+
+}
+
+/*الاقتباسات اسفل كل قصة*/
+.box_Succses p em {
+    color: #294034;
+    font-size: 13pt;
+}
+
+/*workshop and events styling*/
+/*here you can change hover of table*/
+.box table.wetable tr td:hover {
+    background-color: #3E5F4B;
+    border: 1px solid #3E5F4B;
+    font-weight: bold;
+
+
+}
+
+/*here you can chang any thing related to table row*/
+.box table.wetable tr {
+    background-color: #E8F5E9;
+
+
+    border-top-style: solid;
+    border-top-width: 5px;
+    border-top-color: #2c4b35;
+
+
+    border-right-style: solid;
+    border-right-width: 5px;
+    border-right-color: #2c4b35;
+
+
+    border-bottom-style: solid;
+    border-bottom-width: 5px;
+    border-bottom-color: #2c4b35;
+
+
+    border-left-style: solid;
+    border-left-width: 5px;
+    border-left-color: #2c4b35;
+
+
+}
+
+/*here you can change any thing related to table header*/
+.box table th {
+    background-color: #C8E6C9;
+    font-size: 35px;
+}
+
+/*here you can change any thing related to table caption*/
+.box table caption#wecap {
+    font-size: 50pt;
+    margin-bottom: 20px;
+}
+
+.box table th,
+.box table td {
+    padding: 8px 12px;
+}
+
+#fg1:hover {
+    border-style: dotted;
+}
+
+#fg2:hover {
+    border-style: dotted;
+}
+
+/*space between images*/
+#img1 {
+    padding-right: 150px;
+}
+
+/*learneres note*/
+#ln {
+    text-indent: 2em;
+}
+
+/*text under learners image*/
+#ln:hover {
+    font-style: italic;
+}
+
+/* Self-Assessment & Growth Tools */
+.question {
+    color: #3E5F4B;
+    font-size: 18pt;
+    font-weight: bold;
+
+}
+
+.box form {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    font-size: 14pt;
+}
+
+.q-title {
+    margin-top: 20px;
+    margin-bottom: 8px;
+    padding: 8px 10px;
+    background-color: #C8E6C9;
+    border-left: 4px solid #3E5F4B;
+    border-radius: 4px;
+}
+
+.q-title small {
+    font-size: 11pt;
+    color: #2c4b35;
+
+    margin-top: 3px;
+}
+
+/*q1,2,4,6,7,9,10*/
+.box input[type="radio"],
+.box input[type="checkbox"] {
+    margin-right: 6px;
+    margin-bottom: 4px;
+
+}
+
+/*q3,5,8*/
+.box select,
+.box input[type="number"] {
+    padding: 5px 8px;
+    border: 1px solid #3E5F4B;
+    border-radius: 4px;
+    background-color: #F5FFF6;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.box input[type="submit"],
+.box input[type="reset"] {
+    background-color: #3E5F4B;
+    color: #F5F5F5;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+    margin-top: 10px;
+
+    font-size: 13pt;
+}
+
+.box input[type="submit"]:hover,
+.box input[type="reset"]:hover {
+    background-color: #294034;
+}
+
+/* same but for contact us */
+.send_contact_us input[type="submit"],
+.send_contact_us input[type="reset"] {
+    background-color: #3E5F4B;
+    color: #F5F5F5;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+    margin-top: 10px;
+
+    font-size: 13pt;
+}
+
+/* ending box in succses story's */
+.ending-box-succsses {
+    background-color: #F5F5F5;
+    padding: 25px;
+    margin-top: 40px;
+    border-left: 8px solid #6FAF79;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+/* for last box h2 */
+.ending-box-succsses h2 {
+    text-align: center;
+    color: #355E3B;
+    margin-bottom: 15px;
+}
+
+/* start and end paragra */
+.ending-text-succsses {
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* for list end of the */
+.ending-list-succsses {
+    margin: 15px 0;
+    padding-left: 25px;
+    color: #333;
+}
+
+.ending-list-succsses li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.final-line-succsses {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    color: #2F4F2F;
+}
+
+/* workshop rework only learners*/
+/* learners box styling */
+.box.learners-box {
+    background-color: #E8F5E9;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* العنوان داخل البوكس */
+#learners_title {
+    background-color: #C8E6C9;
+    border: 1.28px solid #3E5F4B;
+    padding: 10px;
+    text-align: center;
+    margin: 10px auto 20px auto;
+    width: 60%;
+    border-radius: 6px;
+}
+
+/* جدول المتعلمين */
+.learners-table {
+    width: 100%;
+
+
+    text-align: center;
+}
+
+/* الصور */
+.learners-table img {
+    border-radius: 6px;
+
+}
+
+/* الكابشن تحت الصور */
+.learners-caption {
+    text-align: center;
+    margin-top: 8px;
+    padding: 8px 10px;
+    background-color: #F5FFF6;
+    border: 1px solid #3E5F4B;
+    border-radius: 6px;
+    font-size: 11pt;
+}
+
+/* note under imgs */
+.learners-note {
+    margin-top: 15px;
+    font-size: 13pt;
+    color: gray;
+    font-style: italic;
+}
+
+/* photos and captions succsses storys */
+.learners-table td {
+    text-align: center;
+    vertical-align: top;
+}
+
+/* figure and figurer caption  succsess story*/
+.learners-table figure {
+    text-align: center;
+}
+
+/* learner 1 the man  for the caption on under photo one workshop*/
+#img1_learner1 {
+    padding-right: 0px;
+}
+
+/* in the self assesmant last thing */
+button.result_button a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    font-size: 30px;
+    color: #2F4F2F;
+}
+
+/* in the self assesmant last thing */
+button.result_button {
+    padding: 8px;
+    background-color: aliceblue;
+    border-radius: 5px;
+}
+
+/* contact us pseudo link for contact us */
+/* special styling only for the email links inside the contact page */
+.box ul li a:link {
+    color: #3fa55c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.box ul li a:visited {
+    color: #1f3a29;
+}
+
+.box ul li a:hover {
+    color: #3E5F4B;
+    background-color: #C8E6C9;
+    padding: 2px 5px;
+    border-radius: 4px;
+    text-decoration: underline;
+
+}
+
+.box ul li a:active {
+    color: red;
+}
+
+
+/* summery header and style */
+div.box_summary {
+
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #c0ddc2;
+    width: 97%;
+    margin: 10px auto;
+    border: 1.28px solid #3E5F4B;
+    padding: 10px;
+    margin-top: 0;
+    box-shadow: 1px 1px 1px 1.4px grey;
+}
+
+div.box_summary h1 {
+
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #9DC4B5;
+    width: 90%;
+    margin: 10px auto;
+    border: 1.28px solid #3E5F4B;
+    padding: 10px;
+    text-align: center;
+}
+
+/* question box  */
+div.box_form_questions {
+    background-color: #DFF5E0;
+    width: 85%;
+    margin: 30px auto;
+    border: 1.28px solid #3E5F4B;
+    padding: 10px;
+    box-shadow: 2px 2px 5px grey;
+}
+
+div.box_form_questions hr {
+
+    width: 100%;
+}
+
+
+div.box_form_questions input[type="submit"] {
+    background-color: #3E5F4B;
+    color: #F5F5F5;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+    margin-top: 10px;
+
+    font-size: 13pt;
+}
+
+/* question box  */
+div.box_form_questions {
+    background-color: #DFF5E0;
+    width: 90%;
+    margin: 30px auto;
+    border: 1.28px solid #3E5F4B;
+    padding: 10px;
+}
+
+div.box_form_questions hr {
+
+    width: 70%;
+}
+
+
+div.box_form_questions input[type="submit"] {
+    background-color: #3E5F4B;
+    color: #F5F5F5;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+    margin-top: 10px;
+
+    font-size: 13pt;
+}
+
+td.box_summary_Q4Tabel {
+
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #9DC4B5;
+    width: 30%;
+    margin: 10px auto;
+    border: 1.28px solid #3E5F4B;
+    padding: 10px;
+    text-align: center;
+}
+
+.box_Date {
+    border-radius: 5px;
+    background-color: #7db580d6;
+   display: inline-block;
+    padding: 5px;
+
+    text-align: right;
+    border: 1.28px solid #3E5F4B;
+margin-left: 90%;
+    margin-top: 0;
+}
+
+/* .box_Date h4 {} */
+
+.box_Time {
+    border-radius: 5px;
+    background-color: #7db580d6;
+   display: inline-block;
+    padding: 5px;
+width: 10%;
+    text-align: right;
+    border: 1.28px solid #3E5F4B;
+margin-left: 85%;
+    margin-top: 0;
+}
+
+.Bubble1 {
+    border-radius: 5px;
+    background-color: #7db580d6;
+   display: inline-block;
+    padding: 0.5%;
+width: 10%;
+    text-align: right;
+    border: 1.28px solid #3E5F4B;
+margin-left: 85%;
+    margin-top: 0;
+}
+
+.Bubble2 {
+    border-radius: 5px;
+    background-color: #7db580d6;
+   display: inline-block;
+    padding: 5px;
+width: 3%;
+
+    border: 1.28px solid #3E5F4B;
+margin-left: 88.5%;
+    margin-top: 0;
+}
+

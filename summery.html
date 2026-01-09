@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DISCIPLINED | Home</title>
+
+<link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+
+  <link rel="stylesheet" href="./style.css" />
+  <style>
+    span.Error {
+      color: red;
+    }
+  </style>
+</head>
+
+<body class="learningHubBody">
+      <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+      <div class="container">
+        <a class="navbar-brand logo" href="./homepage.html">DISCIPLINED</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link "
+                aria-current="page"
+                href="./homepage.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="leariningHub.html">leariningHub</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="self-Assessment&GrowthTools.html"
+                >Self-Assessment & Growth Tools</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="workshop&events.html"
+                >Workshops & Events</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="SuccsesStory.html">Succses stories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutUs.html">about us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./Contact-us (4).html">contact us</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle active"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Exams
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item active" href="./summery.html">Summary</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  <div class="box_summary">
+    <h1>summery</h1>
+  </div>
+  <div class="box_form_questions">
+    <!-- info start here -->
+    <form onsubmit="return ValidateForm()">
+      <div class="box_summary">
+        <!-- time -->
+        <div class="box_Time" style="text-align: center">
+          <h4 id="DateOnTop"></h4>
+          <hr />
+          <h4 id="TimeOnTop"></h4>
+        </div>
+        <!-- date -->
+        <div class="Bubble1"></div>
+        <div class="Bubble2"></div>
+        <h2 style="text-align: center">Please enter your information</h2>
+
+        <div class="box_contact_us">
+          <span><b>Full Name</b></span>
+          <br /><input class="contact_us_Questions" type="text" placeholder="Enter your name" id="FullNameJs" />
+          <span class="Error" id="EmptyFiledErrorName"></span>
+          <!-- id
+                is
+                for
+                javascript
+                fullnamejs -->
+          <br /><br />
+
+          <span><b>Email</b></span>
+          <br /><input class="contact_us_Questions" type="email" placeholder="example@gmail.com" id="EmailFirst"
+            onchange="" />
+          <span class="Error" id="EmptyFiledErrorEmailFirst"></span>
+
+          <br /><br />
+          <span><b>Confirm Email</b></span>
+          <br /><input class="contact_us_Questions" type="email" placeholder="example@gmail.com"
+            id="EmailConfirmationSecond" />
+          <span class="Error" id="EmailErrorMessage"></span>
+          <br /><br />
+
+          <span><b>Gender :</b></span>
+          <input type="radio" checked name="Gender" /><span>Femal</span>
+          <input type="radio" name="Gender" /><span>Male</span> <br /><br />
+        </div>
+      </div>
+
+      <!-- questions start here -->
+      <hr />
+      <!---------here---------->
+
+      <h3>
+        1-How many breaks did you take today during study/work hours?(0–10
+        breaks)
+      </h3>
+      <input type="number" id="q1" style="width: 100%" /> <br />
+      <span id="q1s" class="Error"></span> <br />
+      <h3>2 - what does distract you the most:</h3>
+      <select name="" id="q2" style="width: 100%">
+        <option value="">---</option>
+        <option value="phone">phone</option>
+        <option value="social media">social media</option>
+        <option value="friends">friends</option>
+        <option value="overthinking">overthinking</option>
+        <option value="none">none</option>
+      </select>
+      <span id="q2s" class="Error"></span>
+      <h3>3 - what help you stay foucus and DISCIPLINED the most</h3>
+
+      <select name="" id="q3" style="width: 100%">
+        <option value="">---</option>
+        <option value="removing distraction">removing distraction</option>
+        <option value="my long term goal">my long term goal</option>
+        <option value="tracking my progress">tracking my progress</option>
+        <option value="support from family and friends">
+          support from family and friends
+        </option>
+      </select>
+      <span id="q3s" class="Error"></span>
+      <div class="box">
+        <h3>
+          <!-- Q4 -->
+          4 - by atomic habits book how many good habits did you gain and how
+          many bad did you leave (0-6)
+        </h3>
+
+        <table>
+          <tr>
+            <td class="box_summary_Q4Tabel">
+              <span>Good habits</span>
+              <input type="number" id="GoodHabitsQ4" min="0" max="6" />
+            </td>
+
+            <!-- these are on input  -->
+
+            <td class="box_summary_Q4Tabel">
+              <span>Bad habits</span>
+              <input type="number" id="BadHabitsNumberQ4" min="0" max="6" />
+            </td>
+          </tr>
+          <tr></tr>
+        </table>
+        <span id="q4s" class="Error"></span>
+      </div>
+
+      <!-- Q5 -->
+      <div class="box">
+        <h3>5 -how many of these apps did you use</h3>
+        <input type="checkbox" value="Notion" name="q5" /><span>Notion</span>
+        <br /><br />
+
+        <input type="checkbox" value="Forest App" name="q5" /><span>Forest App</span>
+        <br /><br />
+
+        <input type="checkbox" value="TickTick" name="q5" /><span>TickTick</span>
+        <br /><br />
+        <input type="checkbox" value="Google Calender" name="q5" /><span>Google Calender</span>
+        <br /><br /><span id="q5s" class="Error"></span>
+      </div>
+      <h3>
+        6 - What is one new skill you’ve gained that you believe has made the
+        biggest difference in your progress?
+      </h3>
+      <input type="radio" name="q6" value="Time Management " />Time Management
+      <br />
+      <input type="radio" name="q6" value="Problem Solving" />Problem Solving
+      <br />
+      <input type="radio" name="q6" value="Communication Skills" />Communication Skills <br />
+      <input type="radio" name="q6" value="Self-Learning" />Self-Learning<br />
+      <input type="radio" name="q6" value="None" />None <br />
+      <span id="q6s" class="Error"></span>
+
+      <h3>7 - Select the type of content you engaged with the most ?</h3>
+      <input type="radio" name="q7" value="Videos" />Videos <br />
+      <input type="radio" name="q7" value="short story" />short story <br />
+      <input type="radio" name="q7" value="Assignment" />Assignment <br />
+      <input type="radio" name="q7" value="None" />None <br />
+      <span id="q7s" class="Error"></span>
+      <hr />
+      <h2>Report</h2>
+      <textarea name="" id="txtarea" cols="60" rows="10"></textarea>
+      <br /><br />
+      <input type="submit" />
+    </form>
+  </div>
+
+  <footer>&copy ASU 2025-2026</footer>
+
+  <script>
+    function ValidateForm() {
+      document.getElementById("q1s").innerHTML = "";
+      document.getElementById("q2s").innerHTML = "";
+      document.getElementById("q3s").innerHTML = "";
+      document.getElementById("q4s").innerHTML = "";
+      document.getElementById("q5s").innerHTML = "";
+      document.getElementById("q6s").innerHTML = "";
+      document.getElementById("q7s").innerHTML = "";
+      var texareaValues = "";
+      var q1 = document.getElementById("q1").value;
+      var q2 = document.getElementById("q2").value;
+      var q3 = document.getElementById("q3").value;
+      var q6 = document.getElementsByName("q6");
+      var q7 = document.getElementsByName("q7");
+      var q5 = document.getElementsByName("q5");
+      var email1 = document.getElementById("EmailFirst").value;
+      var email2 = document.getElementById("EmailConfirmationSecond").value;
+      var error = false;
+      var score = 0;
+      suggeestion = "suggestion:";
+      // Added validations for full name and email
+      var FullName = document.getElementById("FullNameJs").value;
+      if (FullName == "") {
+        document.getElementById("EmptyFiledErrorName").innerText =
+          "please fill in this field ";
+        error = true;
+      } else {
+        document.getElementById("EmptyFiledErrorName").innerText = "";
+        texareaValues += "Welcome : " + FullName;
+      }
+      if (email1 == "") {
+        document.getElementById("EmptyFiledErrorEmailFirst").innerText =
+          "please fill in this field ";
+        error = true;
+      } else {
+        document.getElementById("EmptyFiledErrorEmailFirst").innerText = "";
+      }
+
+      if (email1 != email2) {
+        document.getElementById("EmailErrorMessage").innerText =
+          "the email doesnt match ";
+        error = true;
+      } else {
+        document.getElementById("EmailErrorMessage").innerText = "";
+        texareaValues += "\n Your Email is : \n" + email1;
+      }
+
+      if (q1 < 0 || q1 == "" || q1 > 10) {
+        document.getElementById("q1s").innerHTML =
+          "You must enter a number between 0 and 10";
+        error = true;
+      } else {
+        texareaValues += "Number of breaks is:" + q1 + "\n";
+        if (q1 >= 0 && q1 <= 1) {
+          suggeestion += "You work hard";
+          score += 15;
+        } else if (q1 == 2) {
+          suggeestion += "You are taking a break within the normal range, which is suitable for long work hours.";
+          score += 12;
+        } else if (q1 == 3) {
+          suggeestion += "You are taking breaks within the normal range, but it is relatively high.";
+          score += 9;
+        } else if (q1 == 4) {
+          suggeestion += " You're taking more breaks than normal; focus on your work.";
+          score += 6;
+        } else if (q1 > 4) {
+          score += 3;
+          suggeestion += "You need to learn more";
+        }
+      }
+      if (q2 == "") {
+        document.getElementById("q2s").innerHTML =
+          "Please select what distracted you the most";
+        error = true;
+      } else {
+        texareaValues += "you distract by:" + q2 + "\n";
+        if (q2 == "phone") {
+          suggeestion += "Reduce your phone use and stay away from it.";
+          score += 5;
+        } else if (q2 == "social media") {
+          score += 4;
+          suggeestion += "It looks like social media is a major distraction for you. Consider using app blockers or setting specific times for checking social media so you can stay more disciplined.";
+        } else if (q2 == "friends") {
+          suggeestion += "You need to manage your relationships better and not let your friends influence you.";
+          score += 9;
+        } else if (q2 == "overthinking") {
+          suggeestion += "  You must focus on your work and leave behind thoughts that might cause your performance to decline.";
+          score += 8;
+        } else {
+          suggeestion += " Since distractions aren't affecting you, that's very good for your progress.";
+          score += 15;
+        }
+      }
+      if (q3 == "") {
+        document.getElementById("q3s").innerHTML =
+          "Please select what helped you stay focused";
+        error = true;
+      } else {
+        texareaValues += "focus helper:" + q3 + "\n";
+        if (q3 == "removing distraction") {
+          suggeestion += "You know what distracts you, and removing it will increase your development. You're doing a good job. ";
+          score += 14;
+        } else if (q3 == "my long term goal") {
+          suggeestion += "A long-term goal requires sustained effort; persevere in it.";
+          score += 12;
+        } else if (q3 == "tracking my progress") {
+          suggeestion += "You track your progress and work according to a well-thought-out plan; this helps you advance. ";
+          score += 15;
+        } else {
+          suggeestion += "It's good to have friends and family who help you move forward. ";
+          score += 11;
+        }
+      }
+
+      //satrt-------------------------------------------------------------
+
+      // Added Q5 logic
+      texareaValues += "Apps used To be more Disciplined: ";
+      for (i = 0; i < q5.length; i++) {
+        if (q5[i].checked) {
+          if (q5[i].value == "Notion") {
+            suggeestion += "Notion is a powerful all-in-one workspace for notes, tasks, databases, and planning. ";
+            texareaValues += q5[i].value;
+            score += 3.75;
+          } else if (q5[i].value == "Forest App") {
+            suggeestion += "Forest is a focus app that helps you stay productive by growing a virtual tree while you avoid using your phone.";
+            texareaValues += q5[i].value;
+            score += 3.75;
+          } else if (q5[i].value == "TickTick") {
+            suggeestion += "TickTick is a smart to-do list app that helps you manage tasks, set reminders, and stay organized with a built-in calendar. ";
+            texareaValues += q5[i].value;
+            score += 3.75;
+          } else if (q5[i].value == "Google Calender") {
+            suggeestion += "Google Calendar is a scheduling tool that helps you plan events, set reminders, and manage your time efficiently.";
+            texareaValues += q5[i].value;
+            score += 3.75;
+          }
+        }
+      }
+
+
+      var counter = 0;
+
+
+      for (i = 0; i < q5.length; i++) {
+        if (q5[i].checked) {
+          counter++;
+        }
+      }
+      // suggestion for Q5
+      if (counter < 2) {
+        suggeestion += "\nyou should use more Apps to improve productivity.";
+      }
+
+
+      if (counter == 0) {
+        document.getElementById("q5s").innerText =
+          "please select at least one app ";
+        error = true;
+      } else {
+        document.getElementById("q5s").innerText = "";
+      }
+
+      // Added Q4 logic
+      var GoodHabits = Number(document.getElementById("GoodHabitsQ4").value);
+      var badHabits = Number(
+        document.getElementById("BadHabitsNumberQ4").value
+      );
+      if (GoodHabits == 0 && badHabits == 0) {
+        score += 3;
+        texareaValues += "\nHabits: you didn't improve any habits yet\n";
+        suggeestion += "\nYou need to work on building and leaving habits.\n";
+      } else if (GoodHabits > 0 && badHabits > 0) {
+        score += 4;
+        suggeestion += "You have acquired good habits and bad habits; try to focus on the good habits.";
+        texareaValues +=
+          "\nHabits: you built good habits and left bad ones, strong progress \n";
+      } else if (GoodHabits > 0 && badHabits == 0) {
+        score += 6;
+        suggeestion += "You are acquiring a good habit, move forward";
+        texareaValues +=
+          "\nHabits: good habits gained, but you still need to leave bad ones\n";
+      } else if (GoodHabits == 0 && badHabits > 0) {
+        score += 0;
+        suggeestion += "You have acquired bad habits; try to get rid of them.";
+        texareaValues +=
+          "\nHabits: great job leaving bad habits, now start building good ones\n";
+      } else {
+        score += 2;
+        suggeestion += "Review the habits you've acquired to determine whether you're progressing or not.";
+        texareaValues +=
+          "\nHabits: you need to work on building and leaving habits\n";
+      }
+      if (GoodHabits == 0 && badHabits == 0) {
+        document.getElementById("q4s").innerText =
+          "please fill in at least one field ";
+        error = true;
+      } else {
+        document.getElementById("q4s").innerText = "";
+      }
+
+      // score calculation for Q4 =-=-=-=-=-=-=-=-=--=-=-=-=-
+      score += (GoodHabits + badHabits) * 1.25;
+      var test = (GoodHabits + badHabits) * 1.25;
+      //console.log(test);
+
+
+
+      //end
+
+      var radio1 = false;
+      var q6v = "";
+      for (i = 0; i < q6.length; i++) {
+        if (q6[i].checked) {
+          radio1 = true;
+          q6v += q6[i].value;
+        }
+      }
+      if (radio1 == false) {
+        document.getElementById("q6s").innerHTML = "Please select the option";
+        error = true;
+      } else {
+        texareaValues += "Acquired skill:" + q6v + "\n";
+        if (q6v == "Time Management") {
+          suggeestion += "Time management is the practice of organizing and planning how to divide your time between different activities efficiently.";
+          score += 5;
+        } else if (q6v == "Problem Solving") {
+          suggeestion += "Problem solving is the ability to find solutions to complex or difficult challenges by using logical and creative thinking.";
+          score += 3;
+        } else if (q6v == "Communication Skills") {
+          suggeestion += "Communication skills are the ability to express ideas clearly and listen effectively in conversations.";
+          score += 2;
+
+        } else if (q6v == "Self-Learning") {
+          suggeestion += "Self-learning is the process of gaining knowledge or skills independently, driven by your own curiosity and motivation.";
+          score += 5;
+        } else {
+
+          score += 0;
+          suggeestion += "You need more training to acquire the skill.";
+        }
+      }
+      var radio = false;
+      var q7v = "";
+      for (i = 0; i < q7.length; i++) {
+        if (q7[i].checked) {
+          radio = true;
+          q7v += q7[i].value;
+        }
+      }
+      if (radio == false) {
+        document.getElementById("q7s").innerHTML = "Please select the option";
+        error = true;
+      } else {
+        texareaValues += "is content :" + q7v + "\n";
+        if (q7v == "Videos") {
+          suggeestion += "Videos are a dynamic medium for sharing information, telling stories, and engaging audiences through visuals and sound.";
+          score += 7;
+        } else if (q7v == "short story") {
+          suggeestion += "A short story is a short piece of literature that tells a complete story with few characters and a clear plot.";
+          score += 3;
+        } else if (q7v == "Assignment") {
+          suggeestion += "An assignment is a task or project given to students to help them practice and understand a subject";
+          score += 5;
+        } else {
+          score += 0;
+          suggeestion +=
+            "They may be unsuitable teaching tools, but they are the most effective and interactive.";
+        }
+      }
+      var s = "score:" + score;
+      if (score >= 90 && score <= 100) {
+        s += ",🌟 Excellent " + "Your discipline level is outstanding! You show strong commitment and excellent self-control.";
+      }
+      else if (score >= 80 && score <= 89) {
+        s += ",✅ very Good " + "Your discipline is very strong, and you are close to reaching an excellent level."
+      }
+      else if (score >= 70 && score <= 79) {
+        s += ",👍 Good " + "You have a solid foundation of discipline, but there is still room for improvement."
+      }
+      else if (score >= 60 && score <= 69) {
+        s += ",🙂 Fair " + "Your discipline is acceptable, but it is not consistent all the time."
+      }
+      else if (score >= 50 && score <= 59) {
+        s += ",⚠️ Needs improvement " + "ou are on the right path, but your discipline needs more structure and focus"
+      }
+      else if (score < 50) {
+        s += "❌ poor " + "Your discipline level is currently low, but this is not the end.";
+      }
+      if (error == true) {
+        return false;
+      } else {
+        document.getElementById("txtarea").value =
+          texareaValues + "\n" + s + "\n" + suggeestion;
+        console.log(score);
+        return false;
+      }
+    }
+    // date and time script
+    // function DateAndTimer(){
+    // }
+
+    var Date = new Date();
+    document.getElementById("DateOnTop").innerHTML =
+      Date.getDate() + "/" + (Date.getMonth() + 1) + "/" + Date.getFullYear();
+
+    document.getElementById("TimeOnTop").innerHTML =
+      Date.getHours() + ":" + Date.getMinutes();
+
+    /*   function StoreInfo() {
+    texareaValues += document.getElementById('FullNameJs').value;
+    texareaValues += "\n";
+    texareaValues += document.getElementById('EmailFirst').value;
+
+
+    console.log(texareaValues);
+
+  }*/
+
+    // function Q1Radiobutton{
+  </script>
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+</body>
+
+</html>
