@@ -9,6 +9,15 @@ font-weight: bold;
 
 
 }
+.FancyHeader-Summary{
+
+color: rgb(30, 47, 35);
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+
+
+}
 /* div.box {
 
 
@@ -18,6 +27,8 @@ font-weight: bold;
     border: 1.28px solid #3E5F4B;
     padding: 10px;
 } */
+
+
 div.box-fluid {
 
 
@@ -27,7 +38,23 @@ div.box-fluid {
     border: 1.28px solid #3E5F4B;
     /* padding: 10px; */
 }
+.box-fluid input[type="radio"],
+.box-fluid input[type="checkbox"] {
+    margin-right: 6px;
+    margin-bottom: 4px;
 
+}
+
+/*q3,5,8*/
+.box-fluid select,
+.box-fluid input[type="number"] {
+    padding: 5px 8px;
+    border: 1px solid #3E5F4B;
+    border-radius: 4px;
+    background-color: #F5FFF6;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
 div.box-Dark {
 
 
@@ -255,10 +282,10 @@ ol.Benifits {
 }
 
 /*مستخدم على الصور داخل كل قصة نجاح*/
-div.box_Succses div img {
+/* div.box_Succses div img {
 
     padding: 20px;
-}
+} */
 
 /*كل قصة داخل بوكس ب ال succes story*/
 div.box_Succses {

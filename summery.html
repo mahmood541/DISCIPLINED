@@ -3,12 +3,9 @@
 
 <head>
   <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-
+  
   <!-- Page encoding -->
-  <meta charset="UTF-8" />      كتب لي كومنت بسيط لكل شيء بحيث يتناسب مع وضيفته يكون ضغير وبسيط  
-
+  <meta charset="UTF-8" />   
   <!-- Responsive layout -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -49,12 +46,15 @@
       line-height: 18px;
     }
   </style>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
 </head>
 
 <body class="learningHubBody">
 
   <!-- Top Navbar -->
-<nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+  <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
       <div class="container">
         <a class="navbar-brand logo" href="index.html">DISCIPLINED</a>
         <button
@@ -122,8 +122,9 @@
       </div>
     </nav>
 
+
   <!-- Main Container -->
-  <div class="container text">
+  <div class="container-fluid text">
 
     <!-- Page Title + Time Box -->
     <div class="row">
@@ -198,41 +199,52 @@
             <hr />
 
             <!-- Q1 -->
-            <h3 style="font-weight: 350;">
-              1-How many breaks did you take today during study/work hours?(0–10
-              breaks)
-            </h3>
-            <input type="number" id="q1" style="width: 100%" /> <br />
-            <span id="q1s" class="Error"></span> <br />
+             <div class="box-fluid p-3 rounded-3 shadow-sm mb-4 bg-success bg-opacity-10 FancyHeader-Summary">
+
+
+               <h3 >
+                 1-How many breaks did you take today during study/work hours?(0–10
+                 breaks)
+                </h3>
+                <input type="number" id="q1" style="width: 100%" /> <br />
+                <span id="q1s" class="Error"></span> <br />
+              </div>
 
             <!-- Q2 -->
-            <h3 style="font-weight: 350;">2 - what does distract you the most:</h3>
-            <select name="" id="q2" style="width: 100%">
-              <option value="">---</option>
-              <option value="phone">phone</option>
-              <option value="social media">social media</option>
-              <option value="friends">friends</option>
-              <option value="overthinking">overthinking</option>
-              <option value="none">none</option>
-            </select>
-            <span id="q2s" class="Error"></span>
+             <div class="box-fluid p-3 rounded-3 shadow-sm mb-4 bg-success bg-opacity-10 FancyHeader-Summary">
 
-            <!-- Q3 -->
-            <h3 style="font-weight: 350;">3 - what help you stay foucus and DISCIPLINED the most</h3>
-            <select name="" id="q3" style="width: 100%">
-              <option value="">---</option>
-              <option value="removing distraction">removing distraction</option>
-              <option value="my long term goal">my long term goal</option>
-              <option value="tracking my progress">tracking my progress</option>
-              <option value="support from family and friends">
-                support from family and friends
-              </option>
-            </select>
-            <span id="q3s" class="Error"></span>
 
-            <!-- Q4 -->
-            <div class="box">
-              <h3 style="font-weight: 350;">
+               <h3 >2 - what does distract you the most:</h3>
+               <select name="" id="q2" style="width: 100%">
+                 <option value="">---</option>
+                 <option value="phone">phone</option>
+                 <option value="social media">social media</option>
+                 <option value="friends">friends</option>
+                 <option value="overthinking">overthinking</option>
+                 <option value="none">none</option>
+                </select>
+                <span id="q2s" class="Error"></span>
+              </div>
+                
+                <!-- Q3 -->
+                 <div class="box-fluid p-3 rounded-3 shadow-sm mb-4 bg-success bg-opacity-10 FancyHeader-Summary">
+
+                   <h3 >3 - what help you stay foucus and DISCIPLINED the most</h3>
+                   <select name="" id="q3" style="width: 100%">
+                     <option value="">---</option>
+                     <option value="removing distraction">removing distraction</option>
+                     <option value="my long term goal">my long term goal</option>
+                     <option value="tracking my progress">tracking my progress</option>
+                     <option value="support from family and friends">
+                       support from family and friends
+                      </option>
+                    </select>
+                    <span id="q3s" class="Error"></span>
+                    
+                  </div>
+                    <!-- Q4 -->
+            <div class="box-fluid p-3 rounded-3 shadow-sm mb-4 bg-success bg-opacity-10 ">
+              <h3 class="FancyHeader-Summary pb-2" >
                 4 - by atomic habits book how many good habits did you gain and how
                 many bad did you leave (0-6)
               </h3>
@@ -240,14 +252,14 @@
               <!-- Q4 inputs layout -->
               <div class="row g-3">
                 <div class="col-12 col-md-6">
-                  <div class="p-3 border rounded-3 bg-success bg-opacity-10 h-100">
+                  <div class="p-3 border rounded-3 bg-primary bg-opacity-25 h-100 shadow">
                     <span class="d-block fw-semibold mb-2">Good habits</span>
                     <input type="number" id="GoodHabitsQ4" min="0" max="6" class="form-control" />
                   </div>
                 </div>
 
                 <div class="col-12 col-md-6">
-                  <div class="p-3 border rounded-3 bg-success bg-opacity-10 h-100">
+                  <div class="p-3 border rounded-3 bg-danger bg-opacity-25 h-100 shadow">
                     <span class="d-block fw-semibold mb-2">Bad habits</span>
                     <input type="number" id="BadHabitsNumberQ4" min="0" max="6" class="form-control" />
                   </div>
@@ -259,8 +271,8 @@
             </div>
 
             <!-- Q5 -->
-            <div class="box">
-              <h3 style="font-weight: 350;">5 -how many of these apps did you use</h3>
+            <div class="box-fluid p-3 rounded-3 shadow-sm mb-4 bg-success bg-opacity-10">
+              <h3 class="FancyHeader-Summary " >5 -how many of these apps did you use</h3>
               <input type="checkbox" value="Notion" name="q5" /><span>Notion</span>
               <br /><br />
               <input type="checkbox" value="Forest App" name="q5" /><span>Forest App</span>
@@ -272,8 +284,10 @@
             </div>
 
             <!-- Q6 -->
-            <h3 style="font-weight: 350;">
-              6 - What is one new skill you’ve gained that you believe has made the
+             <div class="box-fluid p-3 rounded-3 shadow-sm mb-4 bg-success bg-opacity-10 ">
+
+               <h3 class="pb-2 FancyHeader-Summary ">
+                 6 - What is one new skill you’ve gained that you believe has made the
               biggest difference in your progress?
             </h3>
             <input type="radio" name="q6" value="Time Management " />Time Management
@@ -284,34 +298,46 @@
             <input type="radio" name="q6" value="Self-Learning" />Self-Learning<br />
             <input type="radio" name="q6" value="None" />None <br />
             <span id="q6s" class="Error"></span>
-
+          </div>
+            
             <!-- Q7 -->
-            <h3 style="font-weight: 350;">7 - Select the type of content you engaged with the most ?</h3>
-            <input type="radio" name="q7" value="Videos" />Videos <br />
-            <input type="radio" name="q7" value="short story" />short story <br />
-            <input type="radio" name="q7" value="Assignment" />Assignment <br />
-            <input type="radio" name="q7" value="None" />None <br />
-            <span id="q7s" class="Error"></span>
+             <div class="box-fluid p-3 rounded-3 shadow-sm mb-4 bg-success bg-opacity-10 ">
 
-            <hr />
+               <h3 class="FancyHeader-Summary pb-2">7 - Select the type of content you engaged with the most ?</h3>
+               <input type="radio" name="q7" value="Videos" />Videos <br />
+               <input type="radio" name="q7" value="short story" />short story <br />
+               <input type="radio" name="q7" value="Assignment" />Assignment <br />
+               <input type="radio" name="q7" value="None" />None <br />
+               <span id="q7s" class="Error"></span>
+               
+              </div>
+               <hr />
 
             <!-- Report section -->
-            <h2>Report</h2>
+             <div class="introHeader shadow rounded container-fluid">
+
+  <h2 class="FancyHeader p-4">Report</h2>
+    
+</div>
+           
 
             <!-- Output textarea -->
-            <textarea name="" id="txtarea" cols="60" rows="10"></textarea> <br> <br>
+             <div class="d-flex justify-content-center">
 
-            <!-- Progress Bar (score indicator) -->
-            <div class="score-progress-wrap my-3">
-              <div class="progress">
-                <div id="scoreProgress" class="progress-bar bg-secondary progress-bar-striped" role="progressbar"
-                  style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+               <textarea name="" id="txtarea" class="form-control w-75  shadow" rows="8"></textarea> <br> <br>
               </div>
-            </div>
-
-            <!-- Submit button -->
-            <br /><br />
-            <input type="submit" />
+               
+               <!-- Progress Bar (score indicator) -->
+               <div class="score-progress-wrap my-3">
+                 <div class="progress">
+                   <div id="scoreProgress" class="progress-bar bg-secondary progress-bar-striped" role="progressbar"
+                   style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+                  </div>
+                </div>
+                
+                <!-- Submit button -->
+                <br /><br />
+                <input type="submit" class="btn " />
           </form>
         </div>
       </div>
@@ -391,7 +417,7 @@
         error = true;
       } else {
         document.getElementById("EmptyFiledErrorName").innerText = "";
-        texareaValues += "Welcome : " + FullName;
+        texareaValues += "Welcome " + FullName;
       }
 
       // Validate email
@@ -410,7 +436,7 @@
         error = true;
       } else {
         document.getElementById("EmailErrorMessage").innerText = "";
-        texareaValues += "\n Your Email is : \n" + email1;
+        texareaValues += "\n Your Email is : " + email1 + "\n";
       }
 
       // Validate Q1 + scoring
@@ -419,22 +445,20 @@
           "You must enter a number between 0 and 10";
         error = true;
       } else {
-        texareaValues += "Number of breaks is:" + q1 + "\n";
+        texareaValues += "Number of breaks is : " + q1 + "\n";
         if (q1 >= 0 && q1 <= 1) {
-          suggeestion += "You work hard";
           score += 15;
         } else if (q1 == 2) {
-          suggeestion += "You are taking a break within the normal range, which is suitable for long work hours.";
-          score += 12;
+           score += 12;
         } else if (q1 == 3) {
-          suggeestion += "You are taking breaks within the normal range, but it is relatively high.";
+          suggeestion += " it is relatively high amounts of breaks\n";
           score += 9;
         } else if (q1 == 4) {
-          suggeestion += " You're taking more breaks than normal; focus on your work.";
+          suggeestion += " You're taking more breaks than normal; focus on your work.\n";
           score += 6;
         } else if (q1 > 4) {
           score += 3;
-          suggeestion += "You need to learn more";
+          suggeestion += "You need manage your breaks";
         }
       }
 
@@ -444,7 +468,7 @@
           "Please select what distracted you the most";
         error = true;
       } else {
-        texareaValues += "you distract by:" + q2 + "\n";
+        texareaValues += "you distract by : " + q2 + "\n";
         if (q2 == "phone") {
           suggeestion += "Reduce your phone use and stay away from it.";
           score += 5;
@@ -471,39 +495,31 @@
       } else {
         texareaValues += "focus helper:" + q3 + "\n";
         if (q3 == "removing distraction") {
-          suggeestion += "You know what distracts you, and removing it will increase your development. You're doing a good job. ";
-          score += 14;
+           score += 14;
         } else if (q3 == "my long term goal") {
-          suggeestion += "A long-term goal requires sustained effort; persevere in it.";
-          score += 12;
+           score += 12;
         } else if (q3 == "tracking my progress") {
-          suggeestion += "You track your progress and work according to a well-thought-out plan; this helps you advance. ";
-          score += 15;
+           score += 15;
         } else {
-          suggeestion += "It's good to have friends and family who help you move forward. ";
           score += 11;
         }
       }
 
       // Q5 scoring (checkboxes)
-      texareaValues += "Apps used To be more Disciplined: ";
+      texareaValues += "Apps used To be more Disciplined : ";
       for (i = 0; i < q5.length; i++) {
         if (q5[i].checked) {
           if (q5[i].value == "Notion") {
-            suggeestion += "Notion is a powerful all-in-one workspace for notes, tasks, databases, and planning. ";
-            texareaValues += q5[i].value;
+             texareaValues += q5[i].value + '  ';
             score += 3.75;
           } else if (q5[i].value == "Forest App") {
-            suggeestion += "Forest is a focus app that helps you stay productive by growing a virtual tree while you avoid using your phone.";
-            texareaValues += q5[i].value;
+            texareaValues += q5[i].value + '  ';
             score += 3.75;
           } else if (q5[i].value == "TickTick") {
-            suggeestion += "TickTick is a smart to-do list app that helps you manage tasks, set reminders, and stay organized with a built-in calendar. ";
-            texareaValues += q5[i].value;
+            texareaValues += q5[i].value + '  ';
             score += 3.75;
           } else if (q5[i].value == "Google Calender") {
-            suggeestion += "Google Calendar is a scheduling tool that helps you plan events, set reminders, and manage your time efficiently.";
-            texareaValues += q5[i].value;
+            texareaValues += q5[i].value + '  ';
             score += 3.75;
           }
         }
@@ -516,20 +532,6 @@
         }
       }
 
-      // Q5 suggestion
-      if (counter < 2) {
-        suggeestion += "\nyou should use more Apps to improve productivity.";
-      }
-
-      // Q5 required selection
-      if (counter == 0) {
-        document.getElementById("q5s").innerText =
-          "please select at least one app ";
-        error = true;
-      } else {
-        document.getElementById("q5s").innerText = "";
-      }
-
       // Q4 scoring (habits)
       var GoodHabits = Number(document.getElementById("GoodHabitsQ4").value);
       var badHabits = Number(
@@ -537,28 +539,27 @@
       );
       if (GoodHabits == 0 && badHabits == 0) {
         score += 3;
-        texareaValues += "\nHabits: you didn't improve any habits yet\n";
+       texareaValues +=
+          "\nHabits Gained:" + GoodHabits + ", Habits Left:" + badHabits + "\n";
         suggeestion += "\nYou need to work on building and leaving habits.\n";
       } else if (GoodHabits > 0 && badHabits > 0) {
         score += 4;
-        suggeestion += "You have acquired good habits and bad habits; try to focus on the good habits.";
         texareaValues +=
-          "\nHabits: you built good habits and left bad ones, strong progress \n";
+          "\nHabits Gained:" + GoodHabits + ", Habits Left:" + badHabits + "\n";
       } else if (GoodHabits > 0 && badHabits == 0) {
         score += 6;
-        suggeestion += "You are acquiring a good habit, move forward";
         texareaValues +=
-          "\nHabits: good habits gained, but you still need to leave bad ones\n";
+          "\nHabits Gained:" + GoodHabits + ", Habits Left:" + badHabits + "\n";
       } else if (GoodHabits == 0 && badHabits > 0) {
         score += 0;
         suggeestion += "You have acquired bad habits; try to get rid of them.";
         texareaValues +=
-          "\nHabits: great job leaving bad habits, now start building good ones\n";
+          "\nHabits Gained:" + GoodHabits + ", Habits Left:" + badHabits + "\n";
       } else {
         score += 2;
         suggeestion += "Review the habits you've acquired to determine whether you're progressing or not.";
         texareaValues +=
-          "\nHabits: you need to work on building and leaving habits\n";
+          "\nHabits Gained:" + GoodHabits + ", Habits Left:" + badHabits + "\n";
       }
 
       // Q4 required input
@@ -575,6 +576,22 @@
       var test = (GoodHabits + badHabits) * 1.25;
       //console.log(test);
 
+
+      // Q5 suggestion
+      if (counter < 2) {
+        suggeestion += "\nyou should use more Apps to improve productivity.";
+      }
+
+      // Q5 required selection
+      if (counter == 0) {
+        document.getElementById("q5s").innerText =
+          "please select at least one app ";
+        error = true;
+      } else {
+        document.getElementById("q5s").innerText = "";
+      }
+
+
       // Validate Q6 (radio)
       var radio1 = false;
       var q6v = "";
@@ -590,18 +607,18 @@
       } else {
         texareaValues += "Acquired skill:" + q6v + "\n";
         if (q6v == "Time Management") {
-          suggeestion += "Time management is the practice of organizing and planning how to divide your time between different activities efficiently.";
-          score += 5;
+          // suggeestion += "Time management is the practice of organizing and planning how to divide your time between different activities efficiently.";
+          score += 15;
         } else if (q6v == "Problem Solving") {
-          suggeestion += "Problem solving is the ability to find solutions to complex or difficult challenges by using logical and creative thinking.";
-          score += 3;
+          // suggeestion += "Problem solving is the ability to find solutions to complex or difficult challenges by using logical and creative thinking.";
+          score += 10;
         } else if (q6v == "Communication Skills") {
-          suggeestion += "Communication skills are the ability to express ideas clearly and listen effectively in conversations.";
-          score += 2;
+          // suggeestion += "Communication skills are the ability to express ideas clearly and listen effectively in conversations.";
+          score += 8;
 
         } else if (q6v == "Self-Learning") {
-          suggeestion += "Self-learning is the process of gaining knowledge or skills independently, driven by your own curiosity and motivation.";
-          score += 5;
+          // suggeestion += "Self-learning is the process of gaining knowledge or skills independently, driven by your own curiosity and motivation.";
+          score += 10;
         } else {
           score += 0;
           suggeestion += "You need more training to acquire the skill.";
@@ -623,14 +640,14 @@
       } else {
         texareaValues += "is content :" + q7v + "\n";
         if (q7v == "Videos") {
-          suggeestion += "Videos are a dynamic medium for sharing information, telling stories, and engaging audiences through visuals and sound.";
-          score += 7;
+          // suggeestion += "Videos are a dynamic medium for sharing information, telling stories, and engaging audiences through visuals and sound.";
+          score += 15;
         } else if (q7v == "short story") {
-          suggeestion += "A short story is a short piece of literature that tells a complete story with few characters and a clear plot.";
-          score += 3;
+          // suggeestion += "A short story is a short piece of literature that tells a complete story with few characters and a clear plot.";
+          score += 10;
         } else if (q7v == "Assignment") {
-          suggeestion += "An assignment is a task or project given to students to help them practice and understand a subject";
-          score += 5;
+          // suggeestion += "An assignment is a task or project given to students to help them practice and understand a subject";
+          score += 8;
         } else {
           score += 0;
           suggeestion +=
