@@ -1107,4 +1107,56 @@ width: 3%;
 margin-left: 88.5%;
     margin-top: 0;
 }
+/* hmam */
+/* ===== Time Box (Soft + Elegant) ===== */
+.box_summary .box_Time{
+  position: static !important;
+  top: auto !important;
+  right: auto !important;
+  left: auto !important;
+  bottom: auto !important;
+  transform: none !important;
 
+  display: block !important;
+  width: min(680px, 92%) !important;
+  max-width: 100% !important;
+
+  margin: 18px auto 0 auto !important;
+  padding: 20px 24px !important;
+
+  border-radius: 26px !important;
+
+  /* soft glassy look */
+  background: rgba(255, 255, 255, 0.16) !important;
+  backdrop-filter: blur(6px) !important;
+  -webkit-backdrop-filter: blur(6px) !important;
+
+  border: 1.5px solid rgba(0, 0, 0, 0.12) !important;
+  box-shadow: 0 10px 30px rgba(0,0,0,.08) !important;
+
+  text-align: center !important;
+}
+
+/* softer typography */
+.box_summary .box_Time #DateOnTop{
+  font-size: clamp(22px, 2.8vw, 34px) !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.5px !important;
+  margin-bottom: 10px !important;
+  opacity: 0.92 !important;
+}
+
+.box_summary .box_Time #TimeOnTop{
+  font-size: clamp(28px, 3.6vw, 46px) !important;
+  font-weight: 800 !important;
+  letter-spacing: 1px !important;
+  margin-top: 10px !important;
+  opacity: 0.95 !important;
+}
+
+/* elegant divider */
+.box_summary .box_Time hr{
+  width: 62% !important;
+  margin: 10px auto !important;
+  opacity: 0.22 !important;
+}
