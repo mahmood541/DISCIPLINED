@@ -1,13 +1,62 @@
 /* bootstrap */
 
+.FancyHeader{
+
+color: #3E5F4B;
+font-weight: bold;
 
 
 
 
+}
+/* div.box {
+
+
+    background-color: #DFF5E0;
+    width: 90%;
+    margin: 30px auto;
+    border: 1.28px solid #3E5F4B;
+    padding: 10px;
+} */
+div.box-fluid {
+
+
+    background-color: #DFF5E0;
+    
+    /* margin: 30px auto; */
+    border: 1.28px solid #3E5F4B;
+    /* padding: 10px; */
+}
+
+div.box-Dark {
+
+
+    background-color: #3da15882;
+    color: #2b2b2b;
+    width: 90%;
+    margin: 30px auto;
+    border: 1.28px solid #3E5F4B;
+    padding: 10px;
+}
+
+
+div.box-White {
+    background-color: rgba(232, 241, 250, 0.856);
+    color: #2b2b2b;
+    width: 90%;
+    margin: 30px auto;
+    border: 1.5px solid #3fa55c;
+    padding: 10px;
+}
+
+li.li-green{
+
+ background-color: aliceblue;
 
 
 
 
+}
 
 
 
@@ -385,11 +434,11 @@ div.NameBox p {
 
 /*h1's and outside the box*/
 /*العنوان اعلا الشاشه*/
-h1#introHeader {
+.introHeader {
     margin-top: 0;
     text-align: center;
-    background-color: rgb(237, 237, 237);
-    border: 1.30px solid palegoldenrod;
+    background-color:rgba(231, 244, 255, 0.581);
+    /* border: 1.30px solid palegoldenrod; */
 }
 
 /*كلمة sources ب أخر جدول ب صفحة الlearning hup */
