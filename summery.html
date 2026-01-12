@@ -2,244 +2,364 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <!-- Page encoding -->
+  <meta charset="UTF-8" />      كتب لي كومنت بسيط لكل شيء بحيث يتناسب مع وضيفته يكون ضغير وبسيط  
+
+  <!-- Responsive layout -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Page title -->
   <title>DISCIPLINED | Home</title>
 
-<link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
-
-
+  <!-- External CSS file -->
   <link rel="stylesheet" href="./style.css" />
+
+  <!-- Page custom styles -->
   <style>
+    /* Error text style */
     span.Error {
       color: red;
+    }
+
+    /* Time box: responsive & centered */
+    .box_Time {
+      display: inline-block;
+      width: fit-content;
+      max-width: 100%;
+    }
+
+    /* Progress container look */
+    .score-progress-wrap .progress {
+      height: 18px;
+      border-radius: 999px;
+      overflow: hidden;
+      background: rgba(0, 0, 0, 0.06);
+      border: 1px solid rgba(0, 0, 0, 0.08);
+    }
+
+    /* Progress bar text style */
+    .score-progress-wrap .progress-bar {
+      font-weight: 700;
+      font-size: 12px;
+      letter-spacing: .5px;
+      line-height: 18px;
     }
   </style>
 </head>
 
 <body class="learningHubBody">
-      <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
-      <div class="container">
-        <a class="navbar-brand logo" href="index.html">DISCIPLINED</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a
-                class="nav-link "
-                aria-current="page"
-                href="index.html"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="leariningHub.html">leariningHub</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="selfAssessmentGrowthTools.html"
-                >Self-Assessment & Growth Tools</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="workshopevents.html"
-                >Workshops & Events</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="SuccsesStory.html">Succses stories</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="aboutUs.html">about us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./ContactUs.html">contact us</a>
-            </li>
 
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle active"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Exams
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item active" href="./summery.html">Summary</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
+  <!-- Top Navbar -->
+  <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+    <div class="container">
+
+      <!-- Brand / Logo -->
+      <a class="navbar-brand logo" href="./homepage.html">DISCIPLINED</a>
+
+      <!-- Mobile toggler button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+
+          <!-- Home link -->
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="./homepage.html">Home</a>
+          </li>
+
+          <!-- LearningHub link -->
+          <li class="nav-item">
+            <a class="nav-link" href="leariningHub.html">leariningHub</a>
+          </li>
+
+          <!-- Tools link -->
+          <li class="nav-item">
+            <a class="nav-link" href="self-Assessment&GrowthTools.html">Self-Assessment & Growth Tools</a>
+          </li>
+
+          <!-- Workshops link -->
+          <li class="nav-item">
+            <a class="nav-link" href="workshop&events.html">Workshops & Events</a>
+          </li>
+
+          <!-- Stories link -->
+          <li class="nav-item">
+            <a class="nav-link" href="SuccsesStory.html">Succses stories</a>
+          </li>
+
+          <!-- About link -->
+          <li class="nav-item">
+            <a class="nav-link" href="aboutUs.html">about us</a>
+          </li>
+
+          <!-- Contact link -->
+          <li class="nav-item">
+            <a class="nav-link" href="./Contact-us (4).html">contact us</a>
+          </li>
+
+          <!-- Exams dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Exams
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item active" href="./summery.html">Summary</a>
+              </li>
+            </ul>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Container -->
+  <div class="container text">
+
+    <!-- Page Title + Time Box -->
+    <div class="row">
+      <div class="col-12">
+        <div class="box_summary pb-4">
+          <h1>summery</h1>
+
+          <!-- Centered time/date -->
+          <div class="col " style="text-align: center;">
+
+            <!-- time -->
+            <div class="box_Time mt-3 bg-success bg-opacity-10 border border-success rounded-4 shadow-sm px-4 py-3"
+              style="text-align: center">
+
+              <!-- Date output -->
+              <h4 id="DateOnTop" class="mb-2 fw-semibold"></h4>
+
+              <!-- Separator -->
+              <hr class="my-2 opacity-50" />
+
+              <!-- Time output -->
+              <h4 id="TimeOnTop" class="mb-0 fw-bold"></h4>
+            </div>
+            <!-- date -->
+
+          </div>
         </div>
       </div>
-    </nav>
-  <div class="box_summary">
-    <h1>summery</h1>
+    </div>
+
+    <!-- Form Section -->
+    <div class="row">
+      <div class="col">
+        <div class="box_form_questions">
+
+          <!-- Form start -->
+          <form onsubmit="return ValidateForm()">
+
+            <!-- User info box -->
+            <div class="box_summary">
+              <h2 style="text-align: center">Please enter your information</h2>
+
+              <!-- Inputs area -->
+              <div class="box_contact_us">
+
+                <!-- Full name input -->
+                <span><b>Full Name</b></span>
+                <br /><input class="contact_us_Questions" type="text" placeholder="Enter your name" id="FullNameJs" />
+                <span class="Error" id="EmptyFiledErrorName"></span>
+
+                <br /><br />
+
+                <!-- Email input -->
+                <span><b>Email</b></span>
+                <br /><input class="contact_us_Questions" type="email" placeholder="example@gmail.com" id="EmailFirst"
+                  onchange="" />
+                <span class="Error" id="EmptyFiledErrorEmailFirst"></span>
+
+                <br /><br />
+
+                <!-- Confirm email input -->
+                <span><b>Confirm Email</b></span>
+                <br /><input class="contact_us_Questions" type="email" placeholder="example@gmail.com"
+                  id="EmailConfirmationSecond" />
+                <span class="Error" id="EmailErrorMessage"></span>
+
+                <br /><br />
+              </div>
+            </div>
+
+            <!-- Questions area -->
+            <hr />
+
+            <!-- Q1 -->
+            <h3 style="font-weight: 350;">
+              1-How many breaks did you take today during study/work hours?(0–10
+              breaks)
+            </h3>
+            <input type="number" id="q1" style="width: 100%" /> <br />
+            <span id="q1s" class="Error"></span> <br />
+
+            <!-- Q2 -->
+            <h3 style="font-weight: 350;">2 - what does distract you the most:</h3>
+            <select name="" id="q2" style="width: 100%">
+              <option value="">---</option>
+              <option value="phone">phone</option>
+              <option value="social media">social media</option>
+              <option value="friends">friends</option>
+              <option value="overthinking">overthinking</option>
+              <option value="none">none</option>
+            </select>
+            <span id="q2s" class="Error"></span>
+
+            <!-- Q3 -->
+            <h3 style="font-weight: 350;">3 - what help you stay foucus and DISCIPLINED the most</h3>
+            <select name="" id="q3" style="width: 100%">
+              <option value="">---</option>
+              <option value="removing distraction">removing distraction</option>
+              <option value="my long term goal">my long term goal</option>
+              <option value="tracking my progress">tracking my progress</option>
+              <option value="support from family and friends">
+                support from family and friends
+              </option>
+            </select>
+            <span id="q3s" class="Error"></span>
+
+            <!-- Q4 -->
+            <div class="box">
+              <h3 style="font-weight: 350;">
+                4 - by atomic habits book how many good habits did you gain and how
+                many bad did you leave (0-6)
+              </h3>
+
+              <!-- Q4 inputs layout -->
+              <div class="row g-3">
+                <div class="col-12 col-md-6">
+                  <div class="p-3 border rounded-3 bg-success bg-opacity-10 h-100">
+                    <span class="d-block fw-semibold mb-2">Good habits</span>
+                    <input type="number" id="GoodHabitsQ4" min="0" max="6" class="form-control" />
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                  <div class="p-3 border rounded-3 bg-success bg-opacity-10 h-100">
+                    <span class="d-block fw-semibold mb-2">Bad habits</span>
+                    <input type="number" id="BadHabitsNumberQ4" min="0" max="6" class="form-control" />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Q4 error message -->
+              <span id="q4s" class="Error"></span>
+            </div>
+
+            <!-- Q5 -->
+            <div class="box">
+              <h3 style="font-weight: 350;">5 -how many of these apps did you use</h3>
+              <input type="checkbox" value="Notion" name="q5" /><span>Notion</span>
+              <br /><br />
+              <input type="checkbox" value="Forest App" name="q5" /><span>Forest App</span>
+              <br /><br />
+              <input type="checkbox" value="TickTick" name="q5" /><span>TickTick</span>
+              <br /><br />
+              <input type="checkbox" value="Google Calender" name="q5" /><span>Google Calender</span>
+              <br /><br /><span id="q5s" class="Error"></span>
+            </div>
+
+            <!-- Q6 -->
+            <h3 style="font-weight: 350;">
+              6 - What is one new skill you’ve gained that you believe has made the
+              biggest difference in your progress?
+            </h3>
+            <input type="radio" name="q6" value="Time Management " />Time Management
+            <br />
+            <input type="radio" name="q6" value="Problem Solving" />Problem Solving
+            <br />
+            <input type="radio" name="q6" value="Communication Skills" />Communication Skills <br />
+            <input type="radio" name="q6" value="Self-Learning" />Self-Learning<br />
+            <input type="radio" name="q6" value="None" />None <br />
+            <span id="q6s" class="Error"></span>
+
+            <!-- Q7 -->
+            <h3 style="font-weight: 350;">7 - Select the type of content you engaged with the most ?</h3>
+            <input type="radio" name="q7" value="Videos" />Videos <br />
+            <input type="radio" name="q7" value="short story" />short story <br />
+            <input type="radio" name="q7" value="Assignment" />Assignment <br />
+            <input type="radio" name="q7" value="None" />None <br />
+            <span id="q7s" class="Error"></span>
+
+            <hr />
+
+            <!-- Report section -->
+            <h2>Report</h2>
+
+            <!-- Output textarea -->
+            <textarea name="" id="txtarea" cols="60" rows="10"></textarea> <br> <br>
+
+            <!-- Progress Bar (score indicator) -->
+            <div class="score-progress-wrap my-3">
+              <div class="progress">
+                <div id="scoreProgress" class="progress-bar bg-secondary progress-bar-striped" role="progressbar"
+                  style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
+              </div>
+            </div>
+
+            <!-- Submit button -->
+            <br /><br />
+            <input type="submit" />
+          </form>
+        </div>
+      </div>
+    </div>
+
   </div>
-  <div class="box_form_questions">
-    <!-- info start here -->
-    <form onsubmit="return ValidateForm()">
-      <div class="box_summary">
-        <!-- time -->
-        <div class="box_Time" style="text-align: center">
-          <h4 id="DateOnTop"></h4>
-          <hr />
-          <h4 id="TimeOnTop"></h4>
-        </div>
-        <!-- date -->
-        <div class="Bubble1"></div>
-        <div class="Bubble2"></div>
-        <h2 style="text-align: center">Please enter your information</h2>
 
-        <div class="box_contact_us">
-          <span><b>Full Name</b></span>
-          <br /><input class="contact_us_Questions" type="text" placeholder="Enter your name" id="FullNameJs" />
-          <span class="Error" id="EmptyFiledErrorName"></span>
-          <!-- id
-                is
-                for
-                javascript
-                fullnamejs -->
-          <br /><br />
-
-          <span><b>Email</b></span>
-          <br /><input class="contact_us_Questions" type="email" placeholder="example@gmail.com" id="EmailFirst"
-            onchange="" />
-          <span class="Error" id="EmptyFiledErrorEmailFirst"></span>
-
-          <br /><br />
-          <span><b>Confirm Email</b></span>
-          <br /><input class="contact_us_Questions" type="email" placeholder="example@gmail.com"
-            id="EmailConfirmationSecond" />
-          <span class="Error" id="EmailErrorMessage"></span>
-          <br /><br />
-
-          <span><b>Gender :</b></span>
-          <input type="radio" checked name="Gender" /><span>Femal</span>
-          <input type="radio" name="Gender" /><span>Male</span> <br /><br />
-        </div>
-      </div>
-
-      <!-- questions start here -->
-      <hr />
-      <!---------here---------->
-
-      <h3>
-        1-How many breaks did you take today during study/work hours?(0–10
-        breaks)
-      </h3>
-      <input type="number" id="q1" style="width: 100%" /> <br />
-      <span id="q1s" class="Error"></span> <br />
-      <h3>2 - what does distract you the most:</h3>
-      <select name="" id="q2" style="width: 100%">
-        <option value="">---</option>
-        <option value="phone">phone</option>
-        <option value="social media">social media</option>
-        <option value="friends">friends</option>
-        <option value="overthinking">overthinking</option>
-        <option value="none">none</option>
-      </select>
-      <span id="q2s" class="Error"></span>
-      <h3>3 - what help you stay foucus and DISCIPLINED the most</h3>
-
-      <select name="" id="q3" style="width: 100%">
-        <option value="">---</option>
-        <option value="removing distraction">removing distraction</option>
-        <option value="my long term goal">my long term goal</option>
-        <option value="tracking my progress">tracking my progress</option>
-        <option value="support from family and friends">
-          support from family and friends
-        </option>
-      </select>
-      <span id="q3s" class="Error"></span>
-      <div class="box">
-        <h3>
-          <!-- Q4 -->
-          4 - by atomic habits book how many good habits did you gain and how
-          many bad did you leave (0-6)
-        </h3>
-
-        <table>
-          <tr>
-            <td class="box_summary_Q4Tabel">
-              <span>Good habits</span>
-              <input type="number" id="GoodHabitsQ4" min="0" max="6" />
-            </td>
-
-            <!-- these are on input  -->
-
-            <td class="box_summary_Q4Tabel">
-              <span>Bad habits</span>
-              <input type="number" id="BadHabitsNumberQ4" min="0" max="6" />
-            </td>
-          </tr>
-          <tr></tr>
-        </table>
-        <span id="q4s" class="Error"></span>
-      </div>
-
-      <!-- Q5 -->
-      <div class="box">
-        <h3>5 -how many of these apps did you use</h3>
-        <input type="checkbox" value="Notion" name="q5" /><span>Notion</span>
-        <br /><br />
-
-        <input type="checkbox" value="Forest App" name="q5" /><span>Forest App</span>
-        <br /><br />
-
-        <input type="checkbox" value="TickTick" name="q5" /><span>TickTick</span>
-        <br /><br />
-        <input type="checkbox" value="Google Calender" name="q5" /><span>Google Calender</span>
-        <br /><br /><span id="q5s" class="Error"></span>
-      </div>
-      <h3>
-        6 - What is one new skill you’ve gained that you believe has made the
-        biggest difference in your progress?
-      </h3>
-      <input type="radio" name="q6" value="Time Management " />Time Management
-      <br />
-      <input type="radio" name="q6" value="Problem Solving" />Problem Solving
-      <br />
-      <input type="radio" name="q6" value="Communication Skills" />Communication Skills <br />
-      <input type="radio" name="q6" value="Self-Learning" />Self-Learning<br />
-      <input type="radio" name="q6" value="None" />None <br />
-      <span id="q6s" class="Error"></span>
-
-      <h3>7 - Select the type of content you engaged with the most ?</h3>
-      <input type="radio" name="q7" value="Videos" />Videos <br />
-      <input type="radio" name="q7" value="short story" />short story <br />
-      <input type="radio" name="q7" value="Assignment" />Assignment <br />
-      <input type="radio" name="q7" value="None" />None <br />
-      <span id="q7s" class="Error"></span>
-      <hr />
-      <h2>Report</h2>
-      <textarea name="" id="txtarea" cols="60" rows="10"></textarea>
-      <br /><br />
-      <input type="submit" />
-    </form>
-  </div>
-
+  <!-- Footer -->
   <footer>&copy ASU 2025-2026</footer>
 
   <script>
+    // Update progress bar value + color based on score
+    function setScoreProgress(score) {
+      var bar = document.getElementById("scoreProgress");
+      if (!bar) return;
+
+      // Keep progress between 0 and 100
+      var value = Math.max(0, Math.min(100, Math.round(score)));
+
+      // Remove old colors
+      var colors = ["bg-success", "bg-primary", "bg-info", "bg-warning", "bg-danger", "bg-dark", "bg-secondary"];
+      for (var i = 0; i < colors.length; i++) bar.classList.remove(colors[i]);
+
+      // Set color by score range
+      if (score >= 90) {
+        bar.classList.add("bg-success");
+      } else if (score >= 80) {
+        bar.classList.add("bg-primary");
+      } else if (score >= 70) {
+        bar.classList.add("bg-info");
+      } else if (score >= 60) {
+        bar.classList.add("bg-warning");
+      } else if (score >= 50) {
+        bar.classList.add("bg-danger");
+      } else {
+        bar.classList.add("bg-dark");
+      }
+
+      // Apply width + text
+      bar.style.width = value + "%";
+      bar.setAttribute("aria-valuenow", value);
+      bar.textContent = value + "%";
+    }
+
+    // Main validation + score calculation
     function ValidateForm() {
+      // Clear old errors
       document.getElementById("q1s").innerHTML = "";
       document.getElementById("q2s").innerHTML = "";
       document.getElementById("q3s").innerHTML = "";
@@ -247,6 +367,10 @@
       document.getElementById("q5s").innerHTML = "";
       document.getElementById("q6s").innerHTML = "";
       document.getElementById("q7s").innerHTML = "";
+
+      // Reset progress on submit
+      setScoreProgress(0);
+
       var texareaValues = "";
       var q1 = document.getElementById("q1").value;
       var q2 = document.getElementById("q2").value;
@@ -259,7 +383,8 @@
       var error = false;
       var score = 0;
       suggeestion = "suggestion:";
-      // Added validations for full name and email
+
+      // Validate full name
       var FullName = document.getElementById("FullNameJs").value;
       if (FullName == "") {
         document.getElementById("EmptyFiledErrorName").innerText =
@@ -269,6 +394,8 @@
         document.getElementById("EmptyFiledErrorName").innerText = "";
         texareaValues += "Welcome : " + FullName;
       }
+
+      // Validate email
       if (email1 == "") {
         document.getElementById("EmptyFiledErrorEmailFirst").innerText =
           "please fill in this field ";
@@ -277,6 +404,7 @@
         document.getElementById("EmptyFiledErrorEmailFirst").innerText = "";
       }
 
+      // Confirm email match
       if (email1 != email2) {
         document.getElementById("EmailErrorMessage").innerText =
           "the email doesnt match ";
@@ -286,6 +414,7 @@
         texareaValues += "\n Your Email is : \n" + email1;
       }
 
+      // Validate Q1 + scoring
       if (q1 < 0 || q1 == "" || q1 > 10) {
         document.getElementById("q1s").innerHTML =
           "You must enter a number between 0 and 10";
@@ -309,6 +438,8 @@
           suggeestion += "You need to learn more";
         }
       }
+
+      // Validate Q2 + scoring
       if (q2 == "") {
         document.getElementById("q2s").innerHTML =
           "Please select what distracted you the most";
@@ -332,6 +463,8 @@
           score += 15;
         }
       }
+
+      // Validate Q3 + scoring
       if (q3 == "") {
         document.getElementById("q3s").innerHTML =
           "Please select what helped you stay focused";
@@ -353,9 +486,7 @@
         }
       }
 
-      //satrt-------------------------------------------------------------
-
-      // Added Q5 logic
+      // Q5 scoring (checkboxes)
       texareaValues += "Apps used To be more Disciplined: ";
       for (i = 0; i < q5.length; i++) {
         if (q5[i].checked) {
@@ -379,21 +510,19 @@
         }
       }
 
-
       var counter = 0;
-
-
       for (i = 0; i < q5.length; i++) {
         if (q5[i].checked) {
           counter++;
         }
       }
-      // suggestion for Q5
+
+      // Q5 suggestion
       if (counter < 2) {
         suggeestion += "\nyou should use more Apps to improve productivity.";
       }
 
-
+      // Q5 required selection
       if (counter == 0) {
         document.getElementById("q5s").innerText =
           "please select at least one app ";
@@ -402,7 +531,7 @@
         document.getElementById("q5s").innerText = "";
       }
 
-      // Added Q4 logic
+      // Q4 scoring (habits)
       var GoodHabits = Number(document.getElementById("GoodHabitsQ4").value);
       var badHabits = Number(
         document.getElementById("BadHabitsNumberQ4").value
@@ -432,6 +561,8 @@
         texareaValues +=
           "\nHabits: you need to work on building and leaving habits\n";
       }
+
+      // Q4 required input
       if (GoodHabits == 0 && badHabits == 0) {
         document.getElementById("q4s").innerText =
           "please fill in at least one field ";
@@ -440,15 +571,12 @@
         document.getElementById("q4s").innerText = "";
       }
 
-      // score calculation for Q4 =-=-=-=-=-=-=-=-=--=-=-=-=-
+      // Extra score from habits count
       score += (GoodHabits + badHabits) * 1.25;
       var test = (GoodHabits + badHabits) * 1.25;
       //console.log(test);
 
-
-
-      //end
-
+      // Validate Q6 (radio)
       var radio1 = false;
       var q6v = "";
       for (i = 0; i < q6.length; i++) {
@@ -476,11 +604,12 @@
           suggeestion += "Self-learning is the process of gaining knowledge or skills independently, driven by your own curiosity and motivation.";
           score += 5;
         } else {
-
           score += 0;
           suggeestion += "You need more training to acquire the skill.";
         }
       }
+
+      // Validate Q7 (radio)
       var radio = false;
       var q7v = "";
       for (i = 0; i < q7.length; i++) {
@@ -509,6 +638,8 @@
             "They may be unsuitable teaching tools, but they are the most effective and interactive.";
         }
       }
+
+      // Final score message
       var s = "score:" + score;
       if (score >= 90 && score <= 100) {
         s += ",🌟 Excellent " + "Your discipline level is outstanding! You show strong commitment and excellent self-control.";
@@ -528,45 +659,40 @@
       else if (score < 50) {
         s += "❌ poor " + "Your discipline level is currently low, but this is not the end.";
       }
+
+      // Stop if there are errors
       if (error == true) {
         return false;
       } else {
+        // Update progress based on score
+        setScoreProgress(score);
+
+        // Print report in textarea
         document.getElementById("txtarea").value =
           texareaValues + "\n" + s + "\n" + suggeestion;
         console.log(score);
         return false;
       }
     }
-    // date and time script
-    // function DateAndTimer(){
-    // }
 
+    // Show date on page load
     var Date = new Date();
     document.getElementById("DateOnTop").innerHTML =
       Date.getDate() + "/" + (Date.getMonth() + 1) + "/" + Date.getFullYear();
 
+    // Show time on page load
     document.getElementById("TimeOnTop").innerHTML =
       Date.getHours() + ":" + Date.getMinutes();
 
-    /*   function StoreInfo() {
-    texareaValues += document.getElementById('FullNameJs').value;
-    texareaValues += "\n";
-    texareaValues += document.getElementById('EmailFirst').value;
-
-
-    console.log(texareaValues);
-
-  }*/
-
-    // function Q1Radiobutton{
+    /* Example helper function (unused)
+    function StoreInfo() {
+    }*/
   </script>
 
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
